@@ -1,0 +1,110 @@
+* {   
+    box-sizing: border-box; 
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./formPageBg.avif');
+    background-size: cover;
+    min-height: 100vh;    
+    margin: 0;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding-block: 60px;
+    padding-inline: 30px;
+    background-color: white ;
+    width: 400px; 
+    box-shadow: 4px 12px 12px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.hoverEffect{
+    outline : none;
+    width: 100%;
+}
+
+.hoverEffect:hover {
+    box-shadow: 0 7px 10px -5px #4287f5;
+}
+
+.signUp {
+    margin-top: -40px;
+    margin-bottom: 20px;
+    display: block;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 25.5px;   
+    text-align: center;
+}
+
+#username {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px; 
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 0.5px solid black;
+    margin-top: 20px;
+}
+#userEmail, #userPassword, #reTypePassword {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px; 
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 0.5px solid black;
+    margin-top : 10px
+}
+
+#signUpBttn{
+ display: block;
+ background-color: #4287f5;
+ border: 0;
+ padding : 8px;
+ border-radius: 10px;
+ font-size: 16px;
+ color: #ffffff;
+ text-transform: uppercase;
+ cursor: pointer;
+ width: 100%;
+}
+
+#showPassTxt {
+    align-items: flex-end;    
+    width: 100%;
+}
+#showPassBttn{
+    padding: 0;
+    cursor: pointer;   
+}
+#showPassTxt,#showPassBttn{
+    margin-bottom : 10px;
+    margin-top : 0;
+}
+#showPassTxt,#haveAccountTxt{
+    font-weight: 100;
+    font-size : 16px;
+}
+
+#haveAccountTxt{
+    margin-top: 15px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: purple;
+}

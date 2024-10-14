@@ -4,16 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
+    <link rel="stylesheet" href="signUpstyle.css"/>   
+  <script src="signUp.js" defer></script>
+
+</head>  
 <body>
-    <form id="signUp">
-        <input type="text" placeholder="Enter Username" name="username" id="username" required/>   
-        <input type="email" placeholder="Enter Email"  name="userEmail" id="userEmail" required/>
-        <input type="password" placeholder="Enter Password" name="userPassword" id="userPassword" required/>
-        <input type="password" placeholder="Re-type password" name="reTypePassword" id="reTypePassword" required/>
-        <span>Show Password</span><input type="checkbox" id="showPassBttn"/>
-        <button type="submit" id="signUpBttn">Sign Up</button>    
-        <span>Have an account?<a href="loginPage.html">Log in</a></span>
-    </form>
+    <div class="card">
+    <form method="POST" id="signUp">
+        <span class="signUp">Sign Up</span>
+        <input type="text" placeholder="Enter Username" name="username" id="username" class="hoverEffect" required/>   
+        <span class="wrongUsername"></span>
+        <input type="email" placeholder="Enter Email"  name="userEmail" id="userEmail" class="hoverEffect" required/>
+        <input type="password" placeholder="Enter Password" name="userPassword" id="userPassword" class="hoverEffect" required/>
+        <input type="password" placeholder="Re-type password" name="reTypePassword" id="reTypePassword" class="hoverEffect" required/>
+        <span id="wrongPass" style="color :red; display: none; text-align: center;">Password didnot match</span>
+            <label id="showPassTxt">
+                <input type="checkbox" id="showPassBttn"/>
+                Show Password
+            </label>
+     <button type="submit" id="signUpBttn">Sign Up</button>    
+    <p id="haveAccountTxt">Have an account?<a href="loginPage.html">Log in</a></p>
+   </form> 
+    </div>
 </body>
 </html>
