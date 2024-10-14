@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
-
 * {   
     box-sizing: border-box; 
 }
@@ -8,7 +6,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-image: url('./formPageBg.avif');
+    background-size: cover;
     min-height: 100vh;    
     margin: 0;
 }
@@ -25,17 +24,17 @@ body {
     box-shadow: 4px 12px 12px 6px rgba(0, 0, 0, 0.2); 
 }
 
-.hoverEffect {
+.hoverEffect{
     outline : none;
     width: 100%;
 }
 
 .hoverEffect:hover {
-    box-shadow: 0 7px 10px -5px #763dfc;
+    box-shadow: 0 7px 10px -5px #4287f5;
 }
 
 .signUp {
-    margin-top: -50px;
+    margin-top: -40px;
     margin-bottom: 20px;
     display: block;
     font-family: sans-serif;
@@ -67,7 +66,7 @@ body {
 
 #signUpBttn{
  display: block;
- background-color: #763dfc;
+ background-color: #4287f5;
  border: 0;
  padding : 8px;
  border-radius: 10px;
@@ -102,4 +101,10 @@ body {
 
 a{
     text-decoration: none;
+    color: blue;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: purple;
 }
