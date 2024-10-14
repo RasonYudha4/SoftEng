@@ -7,13 +7,21 @@
     <link rel="stylesheet" href="loginStyle.css"/>
 </head>
 <body>
+    <div id="card">
     <form method="POST" id="login">
-        <span>Login</span>
-        <input type="email" placeholder="Email" name="userEmail" id="userEmail"/>
-        <input type="password" placeholder="Password" name="userPassword" id="userPassword"/>
-        <label>Show Password<input type="checkbox" id="showPassBttn"/></label>
-        <button type="submit" name="loginBttn">Log In</button> 
-        <span>Don't have an account?<a href="signUpPage.html">Sign Up</a></span>
+        <p id="formTitle">Login</p>
+        <input type="email" placeholder="Email" name="userEmail" id="userEmail" class="inputStyle"/>
+        <input type="password" placeholder="Password" name="userPassword" id="userPassword" class="inputStyle"/>
+        <label id="labelPassword">
+            <input type="checkbox" id="showPassBttn"/>
+            Show Password
+        </label>
+        <p id="wrongUser" style="color: red; display: none;">Incorrect Username or Password</p>
+        <button type="submit" id="submitBttn">Login</button> 
+        <p id="haveAccountTxt">Don't have an account?
+            <a href="signUpPage.html">Sign Up</a>
+        </p>
     </form>
+    </div>
 </body>
 </html>
