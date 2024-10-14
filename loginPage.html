@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="loginStyle.css"/>
 </head>
 <body>
-    <form>
-        <input type="email" name="userEmail"/>
-        <input type="password" name="userPassword"/>
+    <form method="POST" id="login">
+        <span>Login</span>
+        <input type="email" placeholder="Email" name="userEmail" id="userEmail"/>
+        <input type="password" placeholder="Password" name="userPassword" id="userPassword"/>
+        <label>Show Password<input type="checkbox" id="showPassBttn"/></label>
         <button type="submit" name="loginBttn">Log In</button> 
+        <span>Don't have an account?<a href="signUpPage.html">Sign Up</a></span>
     </form>
 </body>
 </html>
