@@ -26,7 +26,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
   if($user and $password !== '') {
     $loginQuery = "SELECT name, password FROM users WHERE name = ? AND password = ?";
     $exist = mysqli_prepare($conn, $loginQuery);
-    $exist = bind_param("ss", $user, $password);
+    $exist->bind_param("ss", $user, $password);
     $exist->execute();
     if($exist->num_rows > 0) {
       mysqli_close($conn);
