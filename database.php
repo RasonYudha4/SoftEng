@@ -13,7 +13,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
   $newPassword = $_POST['userPassword'];
   $newEmail = $_POST['userEmail'];
 
-  $registerQuery = mysqli_prepare($conn, "INSERT INTO users (name, email, password) VALUES (?, ?, ?");
+  $registerQuery = mysqli_prepare($conn, "INSERT INTO users (name, email, password) VALUES (?, ?, ?)");
   $registerQuery->bind_param("sss", $newuser, $newEmail, $newPassword);
   $registerQuery->execute();
   mysqli_close($conn);
